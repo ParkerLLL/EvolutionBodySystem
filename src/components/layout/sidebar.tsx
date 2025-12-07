@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Dumbbell, LayoutDashboard, Settings, User, Utensils } from "lucide-react"
+import { Dumbbell, LayoutDashboard, Settings, User, Utensils, Lock } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -69,7 +69,16 @@ export function Sidebar() {
                 </nav>
             </div>
             <div className="mt-auto border-t p-4">
-                <div className="flex items-center justify-between">
+                {/* Mock Admin Role Check */}
+                <Link
+                    href="/admin"
+                    className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary hover:bg-muted"
+                >
+                    <Lock className="h-4 w-4" />
+                    Admin Portal
+                </Link>
+
+                <div className="flex items-center justify-between mt-2">
                     <span className="text-xs text-muted-foreground">Theme</span>
                     <ModeToggle />
                 </div>
