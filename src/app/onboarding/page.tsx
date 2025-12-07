@@ -6,7 +6,7 @@ export default function OnboardingPage() {
             <div className="mb-8 text-center space-y-2">
                 <h1 className="text-3xl font-bold tracking-tight">Welcome to Evolution</h1>
                 <p className="text-muted-foreground">
-                    Let's calibrate your system for optimal performance.
+                    Let&apos;s calibrate your system for optimal performance.
                 </p>
             </div>
 

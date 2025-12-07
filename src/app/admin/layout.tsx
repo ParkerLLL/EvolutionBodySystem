@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ShieldAlert, Users, Dumbbell, LayoutDashboard, Settings } from "lucide-react"
@@ -14,7 +14,7 @@ export default function AdminLayout({
     children: React.ReactNode
 }) {
     const pathname = usePathname()
-    const [isAdmin, setIsAdmin] = useState(true) // Mock RBAC
+    const [isAdmin] = useState(true) // Mock RBAC
 
     if (!isAdmin) {
         return (

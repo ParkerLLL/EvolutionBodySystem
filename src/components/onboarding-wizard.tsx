@@ -4,7 +4,7 @@ import { useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-import { Dumbbell, ArrowRight, Activity, Calculator } from "lucide-react"
+import { Activity, ArrowRight, Dumbbell } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -18,7 +18,6 @@ import {
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
     FormLabel,
@@ -33,7 +32,6 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
-import { Slider } from "@/components/ui/slider"
 import { calculateBMR, calculateMacros, calculateTargetCalories, calculateTDEE } from "@/lib/tdee-calculator"
 
 const formSchema = z.object({

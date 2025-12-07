@@ -42,7 +42,7 @@ const initialExercises = [
 ]
 
 export default function ExerciseManagerPage() {
-    const [exercises, setExercises] = useState(initialExercises)
+    const [exercises] = useState(initialExercises)
     const [search, setSearch] = useState("")
 
     const filteredExercises = exercises.filter(ex =>

@@ -25,7 +25,7 @@ export default function DashboardPage() {
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                         <Zap className="h-5 w-5 text-primary fill-primary" />
-                        Today's Mission
+                        Today&apos;s Mission
                     </CardTitle>
                     <CardDescription>
                         High Carb Day • Push (Chest/Tri)

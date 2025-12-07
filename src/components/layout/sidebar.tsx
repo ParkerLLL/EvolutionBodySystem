@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation"
 import { Dumbbell, LayoutDashboard, Settings, User, Utensils, Lock } from "lucide-react"
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
 
 export function Sidebar() {

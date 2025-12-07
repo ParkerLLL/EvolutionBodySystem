@@ -36,7 +36,7 @@ export default function NutritionPage() {
                 <CardHeader>
                     <div className="flex items-center justify-between">
                         <div>
-                            <CardTitle className="text-xl">Today's Cycle</CardTitle>
+                            <CardTitle className="text-xl">Today&apos;s Cycle</CardTitle>
                             <CardDescription>Based on {trainingDay.dayName} Day</CardDescription>
                         </div>
                         <Badge variant={carbMode === 'high' ? 'default' : 'secondary'} className="text-sm px-3 py-1 capitalize">
